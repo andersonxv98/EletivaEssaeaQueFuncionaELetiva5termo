@@ -13,4 +13,8 @@ class homecontroller extends Controller
         echo "js";}
         return view('welcome');
     }
+
+    public function primeiroexercicio(){
+        return view('layout');
+    }
 }
