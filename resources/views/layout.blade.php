@@ -10,7 +10,7 @@
 
     <title >@yield('titulo')!</title>
 </head>
-<body>
+<body style="background-color: #19692c">
 <h1>@yield('titulo')</h1>
 @yield('conteudo')
 <!-- Optional JavaScript; choose one of the two! -->
