@@ -15,6 +15,6 @@ class homecontroller extends Controller
     }
 
     public function primeiroexercicio(){
-        return view('layout');
+        return view('exercicio1');
     }
 }
