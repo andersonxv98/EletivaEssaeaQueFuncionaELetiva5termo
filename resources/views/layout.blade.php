@@ -13,6 +13,19 @@
 <body style="background-color: #19692c">
 <h1>@yield('titulo')</h1>
 @yield('conteudo')
+
+<form action="@route" method="post">
+    @csrf
+    <div class="row">
+        <DIV class="col">
+            <label for="valor" class="label-control"> Informe o valor</label>
+            <input type="number" class="form-control" name="valor">
+        </DIV>
+        <DIV class="col">
+            <button type="submit" class="btn bg-dark"> Informe o valor</button>
+        </DIV>
+    </div>
+</form>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
