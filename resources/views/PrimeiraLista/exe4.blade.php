@@ -12,25 +12,22 @@
 </head>
 <body class="container">
 <h1>Exemplo de Envio de Formulario</h1>
-<form method="post" action="exer2.php">
+<form method="post" action="exer4Resultado">
+@cfrs
     <div class="row">
         <div class="col">
-            <label for="valor1" class="label-control">informe o Valor Do kilo</label>
+            <label for="valor1" class="label-control">informe um Valor</label>
             <input type="number" name="valor1" id="valor1" class="form-control">
         </div>
-        <div class="col">
-            <label for="valor2" class="label-control">informe  a Quantidade de kilos consumida</label>
-            <input type="number" name="valor2" id="valor2" class="form-control">
+        <div class="row mt-5">
+            <div class="col">
+                <button type="submit" class="btn bg-dark text-white"> Enviar</button>
+            </div>
         </div>
-
-    </div>
-    <div class="row mt-5">
-        <div class="col">
-            <button type="submit" class="btn bg-dark text-white"> Enviar</button>
-        </div>
-    </div>
 </form>
-
+@if(isset($resultado))
+    <div class="alert alert-info">{{$resultado}}</div>
+@endif
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->

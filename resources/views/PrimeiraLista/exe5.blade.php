@@ -12,11 +12,24 @@
 </head>
 <body class="container">
 <h1>Exemplo de Envio de Formulario</h1>
-<form method="post" action="exer3.php">S
+<form method="post" action="exer5Resultado">
+@cfrs
     <div class="row">
         <div class="col">
-            <label for="valor1" class="label-control">informe um Valor</label>
+            <label for="valor1" class="label-control">informe o valor da P1</label>
             <input type="number" name="valor1" id="valor1" class="form-control">
+        </div>
+        <div class="col">
+            <label for="valor2" class="label-control">informe o valor da P2</label>
+            <input type="number" name="valor2" id="valor2" class="form-control">
+        </div>
+        <div class="col">
+            <label for="valor3" class="label-control">informe o valor da P3</label>
+            <input type="number" name="valor3" id="valor3" class="form-control">
+        </div>
+        <div class="col">
+            <label for="valor4" class="label-control">informe o valor da P4</label>
+            <input type="number" name="valor4" id="valor4" class="form-control">
         </div>
         <div class="row mt-5">
             <div class="col">
@@ -24,7 +37,9 @@
             </div>
         </div>
 </form>
-
+@if(isset($resultado))
+    <div class="alert alert-info">{{$resultado}}</div>
+@endif
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
